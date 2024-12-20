@@ -1,6 +1,35 @@
 
 // footer
+window.addEventListener('wheel',()=>{
+    
+  const footer = document.getElementById('footer')
+  const imageId = document.getElementById('logo')
+  const colapseOne = document.getElementById('colapse1')
+  const colapseTwo= document.getElementById('colapse2')
+  const colapseThree= document.getElementById('colapse3')
 
+  
+  const rect = footer.getBoundingClientRect();
+  
+  console.log('footerr',footer);
+  
+  
+  if(rect.top <= 20){
+    
+    console.log('consssssssooooooolllll');
+    imageId.src = './assets/images/nme360 white.png'
+    colapseOne.style.background = 'black'
+    colapseTwo.style.background = 'black'
+    colapseThree.style.background = 'black'
+
+  }else{
+    imageId.src = `./assets/images/N-ME 360 LOGO WHITE PNG.png`
+    colapseOne.style.background = 'white'
+    colapseTwo.style.background = 'white'
+    colapseThree.style.background = 'white'
+  }
+
+})
 
 
 
@@ -10,10 +39,25 @@ window.addEventListener('DOMContentLoaded',()=>{
   const nmeText = document.getElementById('nme-text')
   const chooseYourText = document.getElementById('choose-your')
 
+  setTimeout(()=>{
+    nmeText.style.opacity= 1
+  },500);
+
   setTimeout(() => {
-    nmeText.style.display = 'none';
-    chooseYourText.style.display = 'block'
-  }, 5000);
+    if(screen.width>=768){
+      nmeText.style.width = '10%';
+    }else{
+      nmeText.style.width = '30%';
+    }
+
+    nmeText.style.marginTop = '0px';
+    setTimeout(() => {
+      
+      chooseYourText.style.opacity = 1
+    }, 1000);
+    
+
+  }, 2000);
 
   
   const footer = document.getElementById('footer')
@@ -21,7 +65,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   const colapseOne = document.getElementById('colapse1')
   const colapseTwo= document.getElementById('colapse2')
   const colapseThree= document.getElementById('colapse3')
-
+  
   
   const rect = footer.getBoundingClientRect();
   
