@@ -24,6 +24,14 @@
     />
 
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
       rel="stylesheet"
     />
@@ -940,7 +948,7 @@
     </section>
     <!-- future updation section -->
     <section class="each-section">
-      <div class="content-center h-full scrollable">
+      <div id="scrollable-footer" class="content-center h-full scrollable">
         <div class="future-sec h-fit">
           <div class="poppins-thin updates-cards h-full content-center">
             <div class="updates h-fit mt-[85px]">
@@ -957,10 +965,10 @@
               </h1>
             </div>
             <div
-              class="centered md:justify-self-auto justify-self-center gap-4 md:flex md:pt-20 mb-[284px] h-fit"
+              class="centered lg:justify-self-auto justify-self-center gap-4 lg:flex md:pt-20 sm:mb-[204px] mb-[150px] h-fit"
             >
               <div
-                class="card mt-[50px] md:mt-0 border-right-behind border-bottom-behind"
+                class="card mt-[50px] md:mt-0 border-right-behind border-bottom-behind md:mb-[130px]"
               >
                 <div class="shadow"></div>
                 <div class="image background">
@@ -981,7 +989,7 @@
                   </h2>
                 </div>
               </div>
-              <div class="card mt-[150px] md:mt-0 border-left-behind">
+              <div class="card mt-[150px] md:mt-0 border-left-behind md:mb-[130px]">
                 <div class="shadow"></div>
                 <div class="image background">
                   <img
@@ -1001,7 +1009,7 @@
                   </h2>
                 </div>
               </div>
-              <div class="card mt-[150px] md:mt-0 border-left-behind">
+              <div class="card mt-[150px] md:mt-0 border-left-behind md:mb-[130px]">
                 <div class="shadow"></div>
                 <div class="image background">
                   <img
@@ -1038,14 +1046,18 @@
                   Kakkanad, Kochi<br />
                   Kerala 682030
                 </p>
-                <h3 class="mt-[3rem] sm:text-3xl font-bold text-[17px]">
-                  we are also in
-                </h3>
-                <p class="mt-[1rem] text-[20px]">
-                  Trivandrum, Pondichery<br />
-                  Coimbatore,Chennai, Bengaluru<br />
-                  Dubai, Qatar, Oman
-                </p>
+                <div class="">
+                  <h4 class="mt-[3rem] lg:text-3xl font-extrabold poppins-extrabold text-[20px] capitalize">
+                    we are also in
+                  </h4>
+                  <p class="mt-[1rem] text-[20px] ">
+                    Trivandrum, Pondichery<br />
+                    Coimbatore,Chennai, Bengaluru<br />
+                    Dubai, Qatar, Oman
+                  </p>
+
+                </div>
+                
               </div>
 
               <div class="footer-sociallinks">

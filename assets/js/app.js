@@ -1,6 +1,6 @@
 
 // footer logo chagange
-
+DOMContentLoaded()
 window.addEventListener('DOMContentLoaded',()=>{
   
   const footer = document.getElementById('footer')
@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   const rect = footer.getBoundingClientRect();
   
   
-  if(rect.top <= 20){
+  if(rect.top >= 0){
     
     console.log('consssssssooooooolllll');
     imageId.src = './assets/images/nme360 white.png'

@@ -1,35 +1,35 @@
 
-// footer
-window.addEventListener('wheel',()=>{
-    
-  const footer = document.getElementById('footer')
-  const imageId = document.getElementById('logo')
-  const colapseOne = document.getElementById('colapse1')
-  const colapseTwo= document.getElementById('colapse2')
-  const colapseThree= document.getElementById('colapse3')
 
-  
-  const rect = footer.getBoundingClientRect();
-  
-  console.log('footerr',footer);
-  
-  
-  if(rect.top <= 20){
-    
-    console.log('consssssssooooooolllll');
-    imageId.src = './assets/images/nme360 white.png'
-    colapseOne.style.background = 'black'
-    colapseTwo.style.background = 'black'
-    colapseThree.style.background = 'black'
+const scrollableFooter = document.getElementById('scrollable-footer')
+scrollableFooter.addEventListener('scroll',()=>{
+const footer = document.getElementById('footer')
+const imageId = document.getElementById('logo')
+const colapseOne = document.getElementById('colapse1')
+const colapseTwo= document.getElementById('colapse2')
+const colapseThree= document.getElementById('colapse3')
 
-  }else{
-    imageId.src = `./assets/images/N-ME 360 LOGO WHITE PNG.png`
-    colapseOne.style.background = 'white'
-    colapseTwo.style.background = 'white'
-    colapseThree.style.background = 'white'
-  }
 
+const footerTop = footer.getBoundingClientRect();
+
+console.log(footerTop.top,'rect');
+
+if(footerTop.top  <= 0){
+  console.log('consssssssooooooolllll');
+  
+  imageId.src = './assets/images/nme360 white.png'
+  colapseOne.style.background = 'black'
+  colapseTwo.style.background = 'black'
+  colapseThree.style.background = 'black'
+
+}else{
+  imageId.src = `./assets/images/N-ME 360 LOGO WHITE PNG.png`
+  colapseOne.style.background = 'white'
+  colapseTwo.style.background = 'white'
+  colapseThree.style.background = 'white'
+}
 })
+
+
 
 
 
@@ -60,30 +60,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   }, 2000);
 
   
-  const footer = document.getElementById('footer')
-  const imageId = document.getElementById('logo')
-  const colapseOne = document.getElementById('colapse1')
-  const colapseTwo= document.getElementById('colapse2')
-  const colapseThree= document.getElementById('colapse3')
-  
-  
-  const rect = footer.getBoundingClientRect();
-  
-  
-  if(rect.top <= 100){
-    
-    console.log('consssssssooooooolllll');
-    imageId.src = './assets/images/nme360 white.png'
-    colapseOne.style.background = 'black'
-    colapseTwo.style.background = 'black'
-    colapseThree.style.background = 'black'
 
-  }else{
-    imageId.src = `./assets/images/N-ME 360 LOGO WHITE PNG.png`
-    colapseOne.style.background = 'white'
-    colapseTwo.style.background = 'white'
-    colapseThree.style.background = 'white'
-  }
 
 })
 

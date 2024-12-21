@@ -62,6 +62,7 @@
     />
   </head> -->
 
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -74,30 +75,20 @@
     <link href="./main.scss" rel="stylesheet" />
     <link href="./assets/css/service.css" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
     <!-- icon cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
   </head>
   <body class="bg-black">
     <!-- <embed
@@ -112,42 +103,29 @@
       id="nav-bar"
       class="fixed top-0 w-full z-20 flex justify-between sm:px-8 md:px-20 px-[1rem]"
     >
-      <div>
-        <img
-          id="logo"
-          class="w-24 md:w-28 transition-all"
-          src="./assets/images/N-ME 360 LOGO WHITE PNG.png"
-        />
-      </div>
+    <div>
+      <img id="logo"
+        class="w-24 md:w-28 transition-all"
+        src="./assets/images/N-ME 360 LOGO WHITE PNG.png"
+      />
+    </div>
 
       <div
         id="handburger"
         onclick="handleNavbar()"
         class="content-center cursor-pointer"
       >
-        <div
-          id="colapse1"
-          class="h-[2px] rounded bg-white sm:w-8 w-[1.5rem] mb-2"
-        ></div>
-        <div
-          id="colapse2"
-          class="h-[2px] rounded bg-white sm:w-8 w-[1.5rem] mb-2"
-        ></div>
-        <div
-          id="colapse3"
-          class="h-[2px] rounded bg-white sm:w-10 w-[2rem] mb-2"
-        ></div>
+        <div id="colapse1" class="h-[2px] rounded bg-white sm:w-8 w-[1.5rem]  mb-2"></div>
+        <div id="colapse2" class="h-[2px] rounded bg-white sm:w-8 w-[1.5rem] mb-2"></div>
+        <div id="colapse3" class="h-[2px] rounded bg-white sm:w-10 w-[2rem] mb-2"></div>
       </div>
     </div>
 
     <div
       id="nav-expand"
-      class="opacity-0 w-full bg-black fixed z-10 navExpand h-[100vh] mt-[-1080px] h-full"
+      class="opacity-0 w-full bg-black fixed z-10  navExpand h-[100vh] mt-[-1080px] h-full"
     >
-      <div
-        id="nav-main-tab"
-        class="h-0 w-full flex navExpand mt-40 sm:px-20 h-fit justify-center"
-      >
+      <div id="nav-main-tab" class="h-0 w-full flex navExpand mt-40 sm:px-20 h-fit justify-center">
         <div class="sm:w-3/4 w-full text-white mb">
           <a href="index.html">
             <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
@@ -179,13 +157,12 @@
       <h1 class="services-head">services</h1>
     </div>
 
-    <div
-      id="authOverlay"
-      class="opacity-0 fixed z-10 left-0 top-0 h-full w-full flex py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center"
-    >
+    <div id="authOverlay" class="opacity-0 fixed z-10 left-0 top-0 h-full w-full flex py-3 px-2 overflow-y-auto scale-y-0 -translate-x-full origin-center">
+
       <div class="service-modal-img1">
         <img id="modal-image1" src="" alt="" />
       </div>
+
 
       <div id="second" class="bg-black p-4 sm:p-8 w-full rounded-xl scale-y-0">
         <div id="third" class="relative scale-y-0">
@@ -199,6 +176,7 @@
       </div>
       <div class="back-btn">
         <button onclick="closeAuthModal()">back</button>
+   
       </div>
       <div class="service-modal-img">
         <img id="modal-image" src="" alt="" />
@@ -206,13 +184,8 @@
     </div>
 
     <section class="each-section container content-center">
-      <div
-        class="gradient-cards grid gap-[32px] lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:pt-[7rem] scrollable"
-      >
-        <div
-          class="card"
-          onclick="openAuthModal('web development','At Nme 360, we craft exceptional web experiences that blend innovation, functionality, and design. Our expert team delivers customized web development solutions, creating responsive, visually stunning websites that captivate users and drive business growth. Whether you are launching a new site, revamping an existing one, or adding advanced features, we ensure seamless performance and optimized user journeys across all devices. With a focus on cutting-edge technologies and strategic design, Nme 360 helps you build a powerful online presence that stands out in today’s competitive digital landscape. Let’s turn your vision into a dynamic, high-performing website that elevates your brand.','assets/images/web (2).png','assets/images/web (2).png')"
-        >
+      <div class="gradient-cards grid  gap-[32px]  lg:grid-cols-3 sm:grid-cols-2  grid-cols-1 lg:pt-[7rem] scrollable">
+        <div class="card " onclick="openAuthModal('web development','At Nme 360, we craft exceptional web experiences that blend innovation, functionality, and design. Our expert team delivers customized web development solutions, creating responsive, visually stunning websites that captivate users and drive business growth. Whether you are launching a new site, revamping an existing one, or adding advanced features, we ensure seamless performance and optimized user journeys across all devices. With a focus on cutting-edge technologies and strategic design, Nme 360 helps you build a powerful online presence that stands out in today’s competitive digital landscape. Let’s turn your vision into a dynamic, high-performing website that elevates your brand.','assets/images/web (2).png','assets/images/web (2).png')">
           <div class="container-card bg-green-box">
             <img src="./assets/images/web.png" alt="" width="80" height="80" />
             <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -233,8 +206,7 @@
             </svg> -->
             <p class="card-title">web development</p>
             <p class="card-description">
-              It's more than coding; it's about crafting an online presence that
-              reflects your brand.
+              It's more than coding; it's about crafting an online presence that reflects your brand.
             </p>
           </div>
         </div>
@@ -264,8 +236,7 @@
             </svg> -->
             <p class="card-title">app development</p>
             <p class="card-description">
-              We turn your ideas into impactful mobile apps, blending the latest
-              tech with user-friendly designs.
+              We turn your ideas into impactful mobile apps, blending the latest tech with user-friendly designs.
             </p>
           </div>
         </div>
@@ -275,7 +246,12 @@
           onclick="openAuthModal('ui/ux development','Our team specializes in developing visually appealing and user-friendly interfaces that deliver the best user experience across all devices. A thoughtfully crafted UI/UX not only enhances your brand’s professionalism but also helps reduce development costs by minimizing the need for future revisions. This makes it a vital element of our comprehensive IT solutions. We focus on creating intuitive, engaging, and visually captivating interactions, ensuring your website or app stands out. Whether you are building a new platform or revamping an existing one, we ensure every interaction reflects your brand’s values and leaves a lasting impression on your audience.','assets/images/download (2).png')"
         >
           <div class="container-card bg-white-box">
-            <img src="./assets/images/uiux.png" alt="" width="80" height="80" />
+            <img
+              src="./assets/images/uiux.png"
+              alt=""
+              width="80"
+              height="80"
+            />
             <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4565)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4565)" stroke-width="2"></rect>
               <ellipse rx="21.9462" ry="22.2891" transform="matrix(0.964749 0.263173 -0.254526 0.967066 60.1463 63.0804)" stroke="white" stroke-width="1.00101" stroke-linecap="round" stroke-dasharray="4 5.01"></ellipse>
@@ -299,8 +275,7 @@
             </svg> -->
             <p class="card-title">ui/ux development</p>
             <p class="card-description">
-              A well-crafted UI/UX elevates your brand, reduces future
-              revisions, and is key to our IT solutions.
+              A well-crafted UI/UX elevates your brand, reduces future revisions, and is key to our IT solutions.
             </p>
           </div>
         </div>
@@ -333,8 +308,7 @@
             </svg> -->
             <p class="card-title">digital marketing</p>
             <p class="card-description">
-              A startup or enterprise, digital marketing drives your brand's
-              visibility, growth, and success.
+              A startup or enterprise, digital marketing drives your brand's visibility, growth, and success.
             </p>
           </div>
         </div>
@@ -344,12 +318,7 @@
           onclick="openAuthModal('branding and designing','Branding and design are at the core of your business identity, shaping how your company is perceived in the market. It’s not just about a logo or a tagline—it’s about creating a unique, memorable presence that differentiates you from competitors. A strong brand fosters trust, loyalty, and lasting connections with your audience. Our design experts focus on delivering innovative, modern visuals that not only capture attention but effectively communicate your brand’s message. By combining strategic branding with creative design, we ensure your business stands out, engages customers, and builds long-term success. Let’s bring your brand to life','assets/images/branding (1).png','assets/images/branding (1).png')"
         >
           <div class="container-card bg-blue-box">
-            <img
-              src="./assets/images/branding.png"
-              alt=""
-              width="80"
-              height="80"
-            />
+            <img src="./assets/images/branding.png" alt="" width="80" height="80" />
             <!-- <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="1" y="1" width="118" height="118" rx="24" fill="url(#paint0_linear_1366_4582)" fill-opacity="0.15" stroke="url(#paint1_radial_1366_4582)" stroke-width="2"></rect>
               <path d="M90.9405 64.775L88.0155 69.55L85.1155 64.775H80.0655L85.5155 72.85L79.5905 82H84.4905L88.0155 76.175L91.5155 82H96.4405L90.4905 72.85L95.9405 64.775H90.9405Z" fill="#87A1FF"></path>
@@ -368,11 +337,11 @@
             </svg> -->
             <p class="card-title">branding and designing</p>
             <p class="card-description">
-              Branding and design define your business, crafting unique, modern
-              visuals that engage and connect with your audience
+              Branding and design define your business, crafting unique, modern visuals that engage and connect with your audience
             </p>
           </div>
         </div>
+
 
         <div
           class="card"
@@ -398,8 +367,7 @@
             </svg> -->
             <p class="card-title">SEO</p>
             <p class="card-description">
-              Boost your visibility, drive organic traffic, and dominate search
-              rankings with our expert SEO services.
+              Boost your visibility, drive organic traffic, and dominate search rankings with our expert SEO services.
             </p>
           </div>
         </div>
@@ -456,16 +424,14 @@
             </svg> -->
             <p class="card-title">software installation</p>
             <p class="card-description">
-              We follow the SDLC approach, developing high-quality software
-              applications that align with your business goals.
+              We follow the SDLC approach, developing high-quality software applications that align with your business goals.
             </p>
           </div>
         </div>
 
         <div class="card-after-text lg:col-span-2 text-[#ffffff24]">
           <h1>
-            we provide<br />
-            360 solutions for you
+            we provide</br> 360 solutions for you
           </h1>
         </div>
       </div>
@@ -477,7 +443,10 @@
           <div class="deserve-video">
             <!-- <img src="./assets/images/download.jpg" alt=""> -->
             <video autoplay muted loop>
-              <source src="assets/videos/aesthetic.mp4" type="video/mp4" />
+              <source
+                src="assets/videos/aesthetic.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -485,19 +454,12 @@
           <div class="deserve-head">
             <h1>do more with <br />us</h1>
             <p>
-              At NME 360, we provide complete 360° IT solutions to help
-              businesses thrive in the digital age. From custom software
-              development to branding and strategic marketing, our services are
-              designed to enhance your digital presence and future-proof your
-              operations. We specialize in innovative digital transformation,
-              data analytics, IT consulting, and cloud solutions that drive
-              efficiency and success. Our expert team works closely with you to
-              optimize operations, improve customer engagement, and implement
-              strategies that resonate with your target audience. Focused on the
-              future, we leverage cutting-edge technology to help businesses
-              stay ahead in today’s competitive market. At NME 360, we empower
-              businesses to unlock their full potential and succeed in an
-              ever-evolving landscape.
+              At NME 360, we provide complete 360° IT solutions to help businesses thrive in the digital age. From custom software development
+               to branding and strategic marketing, our services are designed to enhance your digital presence and future-proof your operations.
+                We specialize in innovative digital transformation, data analytics, IT consulting, and cloud solutions that drive efficiency and success.
+                 Our expert team works closely with you to optimize operations, improve customer engagement, and implement strategies that resonate with your target audience.
+                  Focused on the future, we leverage cutting-edge technology to help businesses stay ahead in today’s competitive market. At NME 360, 
+              we empower businesses to unlock their full potential and succeed in an ever-evolving landscape.
             </p>
           </div>
         </div>
@@ -515,21 +477,16 @@
 
               <h1>why we or what makes us unique</h1>
               <p>
-                At NME 360, we take a unique, 360° approach to business growth
-                by seamlessly blending innovative IT solutions, custom branding,
-                and strategic marketing into one cohesive service. Unlike
-                others, we don't offer one-size-fits-all solutions. Instead, we
-                tailor each service to meet your specific business needs,
-                ensuring sustainable growth and long-term success. What sets us
-                apart is our ability to stay ahead of digital trends, leveraging
-                cutting-edge technology and creative strategies to empower your
-                business in an ever-evolving market. Our expert team works
-                closely with you to craft personalized solutions that optimize
-                your operations, enhance your brand presence, and improve
-                customer engagement. With NME 360, you’re not just adapting to
-                change – you're leading it. We focus on delivering future-proof
-                solutions that position your business to thrive today and in the
-                future.
+                At NME 360, we take a unique, 360° approach to business growth by seamlessly blending innovative IT solutions, custom branding, 
+                and strategic marketing into one cohesive service. Unlike others, we don't offer one-size-fits-all solutions. Instead, we tailor each service to meet your 
+                specific business needs, ensuring sustainable growth and long-term success.
+
+                What sets us apart is our ability to stay ahead of digital trends, leveraging cutting-edge technology and creative strategies to empower your business
+                in an ever-evolving market. Our expert team works closely with you to craft personalized solutions that optimize your operations, enhance your brand presence, 
+                and improve customer engagement.
+
+                With NME 360, you’re not just adapting to change – you're leading it. We focus on delivering future-proof
+                solutions that position your business to thrive today and in the future.
               </p>
             </div>
             <div class="services-why-image">
@@ -540,21 +497,11 @@
 
         <!-- footer -->
 
-        <div class="footer mt-[5rem] overflow-hidden" id="footer">
+        <div class="footer w-[100%] overflow-hidden" id="footer">
           <div class="container-fluid">
             <div
               class="footer-sub grid grid-col-3 md:grid-flow-col sm:grid-cols-2 md:grid-cols-2"
             >
-              <!-- <div class="footer-address">
-                <p>
-                  Hilite Business Park<br />
-                  Near Hilite Mall,Poovangal,Kozhikode<br />
-                  Kochi, Thiruvananthapuram, Pondichery<br />
-                  Coimbatore,Chennai, Bengaluru<br />
-                  Dubai, Qatar, Oman<br />
-                </p>
-              </div> -->
-
               <div class="footer-address">
                 <p class="text-[27px]">
                   Carnival Infopark Phase I <br />
@@ -563,7 +510,7 @@
                   Kerala 682030
                 </p>
                 <div class="">
-                  <h4 class="mt-[3rem] lg:text-3xl font-extrabold poppins-extrabold text-[20px] capitalize">
+                  <h4 class="mt-[3rem] sm:text-3xl font-extrabold poppins-extrabold text-[20px] capitalize">
                     we are also in
                   </h4>
                   <p class="mt-[1rem] text-[20px] ">
@@ -573,6 +520,7 @@
                   </p>
 
                 </div>
+                
               </div>
 
               <div class="footer-sociallinks">
@@ -618,7 +566,7 @@
 
             <div class="copyright grid grid-rows-1 grid-flow-col">
               <div class="copy">
-                <p>
+                <p class="font-normal">
                   <i class="fa fa-copyright" aria-hidden="true"></i> 2024
                   nme-360. powerd by nme-360 team
                 </p>

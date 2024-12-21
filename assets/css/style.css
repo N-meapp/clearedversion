@@ -27,6 +27,8 @@
     font-weight: normal;
     font-style: normal;
   }
+
+
   
   .fontfamily-extra-bold{
     font-family: head-font;
@@ -599,7 +601,6 @@
     font-size: 20px;
     color: white;
     /* font-family: "Poppins", sans-serif; */
-    font-weight: 40;
     font-style: normal;
   
   }
@@ -827,7 +828,7 @@
   
   .footer-address p{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     /* font-size: 27px; */
     text-transform: capitalize;
@@ -844,7 +845,7 @@
   
   .footer-sociallinks p{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-size: 27px;
     /* text-transform: capitalize; */
@@ -885,13 +886,13 @@
   
   .footer-email h4{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
     font-style: normal;
     font-size: 30px;
     text-transform: capitalize;
     margin-top: 90px;
     font-weight: 800;
   }
+
   
   /* footer section */
   .footer-newsletter{
@@ -973,10 +974,10 @@
     text-align: center;
     margin-top: 180px;
   }
-  .copy,.powerdby{
-    font-size: 20px;
+  .copy p{
+    font-size: 21px;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     text-transform: capitalize;
   }
@@ -1194,7 +1195,7 @@
     margin-top: 34px;
   }
   
-  .copy, .powerdby{
+  .copy p{
     font-size: 12px;
   }
   
@@ -1216,9 +1217,9 @@
   }
   
   
-  .weare-also{
+  /* .weare-also{
     font-family: 'poppins',sans-serif !important;
     font-weight: 800;
     text-transform: capitalize;
   
-  }
+  } */

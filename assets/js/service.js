@@ -2,36 +2,42 @@
 
 // footer
 
-window.addEventListener('wheel',()=>{
-    
+
+function changeLogo(){
   const footer = document.getElementById('footer')
   const imageId = document.getElementById('logo')
   const colapseOne = document.getElementById('colapse1')
   const colapseTwo= document.getElementById('colapse2')
   const colapseThree= document.getElementById('colapse3')
-
-  
-  const rect = footer.getBoundingClientRect();
-  
-  console.log('footerr',footer);
   
   
-  if(rect.top <= 20){
-    
+  const footerTop = footer.getBoundingClientRect();
+  
+  console.log(footerTop.top,'rect');
+  
+  if(footerTop.top  <= 0){
     console.log('consssssssooooooolllll');
+    
     imageId.src = './assets/images/nme360 white.png'
     colapseOne.style.background = 'black'
     colapseTwo.style.background = 'black'
     colapseThree.style.background = 'black'
-
+  
   }else{
     imageId.src = `./assets/images/N-ME 360 LOGO WHITE PNG.png`
     colapseOne.style.background = 'white'
     colapseTwo.style.background = 'white'
     colapseThree.style.background = 'white'
   }
+}
 
-})
+const scrollableFooter = document.getElementById('scrollable-footer')
+
+if(scrollableFooter){
+  scrollableFooter.addEventListener('scroll',()=>{
+      changeLogo()
+  })
+}
   // handle navbar collapse
 
   window.addEventListener('DOMContentLoaded',()=>{
@@ -445,6 +451,8 @@ window.addEventListener('DOMContentLoaded',()=>{
 const scrollableDiv = document.getElementById('scrollbar-id-2');
 
 scrollableDiv.addEventListener('scroll', () => {
+
+  changeLogo()
 
     const viewportHeight = window.innerHeight;
     const centerY = viewportHeight / 2;
